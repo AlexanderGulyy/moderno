@@ -1,5 +1,6 @@
 @import 'vars';
 @import 'global';
+@import 'fonts';
 
 // Start header
 
@@ -378,6 +379,160 @@
 	}
 }
 
-
-
 // end tutorial
+// start footer
+
+.footer{
+	background-color: $bg;
+	&__inner{
+		display: flex;
+		justify-content: space-between;
+		padding: 100px 0 80px;
+	}
+}
+.footer__copy{
+	border-top: 1px solid #424d53;
+}
+.footer__copy-text{
+	text-align: center;
+	color: #919699;
+	padding: 27px 0 30px;
+}
+.footer__col{
+	max-width: 270px;
+	width: 100%;
+	&-menu{
+		max-width: 220px;
+		width: 100%;
+	}
+	&-title{
+		font-family: 'Raleway', sans-serif;
+		font-weight: 700;
+		font-size: 22px;
+		color: #fff;
+		padding-bottom: 25px;
+		margin-bottom: 30px;
+		position: relative;
+		&::before{
+			content: '';
+			position: absolute;
+			background-color: $green;
+			bottom: 0;
+			left: 2px;
+			width: 51px;
+			height: 3px;
+		}
+	}
+	&-text{
+		color: #b7c3c8;
+		margin-bottom: 30px;
+	}
+}
+.footer__info{
+	color: #fff;
+	font-weight: 500;
+	margin-top: 18px;
+	padding-left: 30px;
+	position: relative;
+	&::before{
+		content: '\f041';
+		font-family: 'icomoon';
+		color: $green;
+		font-size: 18px;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+}
+.footer__info-phone{
+	&::before{
+		content: '\f095';
+	}
+}
+.footer__col-list{
+	a{
+		color: #b7c3c8;
+		margin-bottom: 15px;
+		padding-left: 22px;
+		position: relative;
+		&::before{
+			content: '\f105';
+			font-family: 'icomoon';
+			position: absolute;
+			left: 0;
+			color: $green;
+			font-size: 18px;
+		}
+	}
+}
+.footer__social-link{
+	margin-bottom: 33px;
+	li{
+		display: inline-block;
+	}
+	& + li{
+		margin-left: 7px;
+	}
+	a{
+		width: 28px;
+		height: 28px;
+		background-image: url(../images/css_sprites.png);
+	}
+}
+.link-twitter{
+background-position: 28px 0;
+}
+.link-youtube{
+background-position: -28px 28px;
+}
+.link-pinterest{
+background-position: 56px 0;
+}
+.link-linkedin{
+background-position: 0 -28px;
+}
+.footer__form-title{
+	color: #fff;
+	margin-bottom: 15px;
+	font-size: 20px;
+}
+.footer__form{
+	position: relative;
+	input{
+		background-color: #2f3c43;
+		border: none;
+		display: block;
+		width: 100%;
+		height: 40px;
+		color: #fff;
+		padding: 0 50px 0 13px;
+		&::placeholder{
+			color: #697378;
+			font-size: 14px;
+		}
+	}
+	button{
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		background-color: $green;
+		border: none;
+		width: 43px;
+		height: 40px;
+		cursor: pointer;
+		outline: none;
+		&::before{
+			content: '\f124';
+			position: absolute;
+			font-family: 'icomoon';
+			color: #fff;
+			font-size: 20px;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+}
+
+// end footer
+// 
