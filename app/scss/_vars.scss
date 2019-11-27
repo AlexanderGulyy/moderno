@@ -3,3 +3,9 @@ $red: #e74c3c;
 $green: #8bc34a;
 $bg: #263238;
 $grey: #f4f6f5;
+
+@mixin bg {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
