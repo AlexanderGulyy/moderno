@@ -147,7 +147,7 @@
 										</ul>
 									</div>
 								</div>
-								<a href="#" class="header__btn header__btn-login header__btn-login--on">Login</a>
+								<a class="header__btn header__btn-login header__btn-login--on" data-fancybox data-src="#hidden-content" href="javascript:;">Login</a>
 								<a href="#" class="header__btn header__btn-logout header__btn-logout--of">Logout</a>
 								<a href="#" class="header__btn header__btn-register header__btn-login--on">Register</a>
 							</div>
@@ -1024,6 +1024,22 @@
 				</div>
 			</div>
 		</footer>
+	</div>
+	<div id="hidden-content">
+		<div class="login__wraper">
+			<div class="login__title">Login</div>
+			<form>
+				<label class="login__label login__label-name">
+					<input type="text" placeholder="Name" required>
+				</label>
+				<label class="login__label login__label-pass">
+					<input type="password" placeholder="Password" required>
+				</label>
+				<button type="submit">submit</button>
+				<a class="creat-acc" href="#!">Creat An Account?</a>
+				<a class="lost-pass" href="#!">Lost Password?</a>
+			</form>
+		</div>
 	</div>
 
 
