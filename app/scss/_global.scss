@@ -17,6 +17,8 @@ ul, li{
 html,
 body {
 	height: 100%;
+	position: relative;
+	overflow-x: hidden;
 }
 button{
 	border: none;
@@ -40,7 +42,7 @@ body{
 	font-size: 15px;
 	line-height: 24px;
 	color: $text;
-	overflow-x: hidden;
+	
 }
 .container{
 	max-width: 1200px;
